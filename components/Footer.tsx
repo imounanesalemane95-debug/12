@@ -1,5 +1,5 @@
 import React from 'react';
-import { CreditCard, Landmark, Wallet } from 'lucide-react';
+import { CreditCard, Landmark, Wallet, Globe, Phone, Mail } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -22,6 +22,7 @@ const Footer: React.FC = () => {
               />
             </div>
             <p className="text-slate-500 text-sm leading-relaxed max-w-xs">
+              <span className="block text-slate-300 font-serif italic text-lg mb-2">Prêts pour la croissance.</span>
               Empowering Moroccan businesses with cutting-edge digital solutions. Connecting vision to reality.
             </p>
           </div>
@@ -30,16 +31,18 @@ const Footer: React.FC = () => {
             <h4 className="text-white font-bold mb-4">Contact</h4>
             <ul className="space-y-3 text-sm text-slate-500">
               <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-cyan-500"></span>
-                Casablanca, Morocco
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-cyan-500"></span>
-                +212 6 00 00 00 00
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-cyan-500"></span>
+                <Mail className="w-4 h-4 text-cyan-500" />
                 contact@nexusmedia.ma
+              </li>
+              <li className="flex items-center gap-2">
+                <Phone className="w-4 h-4 text-cyan-500" />
+                0779688469
+              </li>
+              <li className="flex items-center gap-2">
+                <Globe className="w-4 h-4 text-cyan-500" />
+                <a href="https://nexusmedia-rho.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors break-all">
+                  nexusmedia-rho.vercel.app
+                </a>
               </li>
             </ul>
           </div>
